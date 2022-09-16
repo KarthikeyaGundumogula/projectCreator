@@ -1,0 +1,189 @@
+@keyframes jello-horizontal {
+    0%,
+    to {
+      transform: scale3d(1, 1, 1);
+    }
+    30% {
+      transform: scale3d(1.25, 0.75, 1);
+    }
+    40% {
+      transform: scale3d(0.75, 1.25, 1);
+    }
+    50% {
+      transform: scale3d(1.15, 0.85, 1);
+    }
+    65% {
+      transform: scale3d(0.95, 1.05, 1);
+    }
+    75% {
+      transform: scale3d(1.05, 0.95, 1);
+    }
+  }
+  @keyframes pulsate {
+    0% {
+      transform: scale(1);
+      transform-origin: center center;
+      animation-timing-function: ease-out;
+    }
+    10% {
+      transform: scale(0.91);
+      animation-timing-function: ease-in;
+    }
+    17% {
+      transform: scale(0.98);
+      animation-timing-function: ease-out;
+    }
+    33% {
+      transform: scale(0.87);
+      animation-timing-function: ease-in;
+    }
+    45% {
+      transform: scale(1);
+      animation-timing-function: ease-out;
+    }
+  }
+  body {
+    margin: 0;
+    line-height: normal;
+  }
+  .mint-your-social-token {
+    margin: 0;
+    position: absolute;
+    top: 102px;
+    left: 78px;
+    font-size: 48px;
+    font-weight: 800;
+    font-family: inherit;
+    color: #02202d;
+    display: flex;
+    align-items: center;
+    width: 395px;
+    height: 83px;
+  }
+  .container-div1 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: conic-gradient(
+      from -64.11deg at 50% 50%,
+      #3abad7 -61.47deg,
+      rgba(41, 101, 114, 0.44) 114.73deg,
+      rgba(37, 81, 90, 0.31) 164.65deg,
+      rgba(39, 71, 78, 0.3) 232.6deg,
+      #3abad7 298.53deg,
+      rgba(41, 101, 114, 0.44) 474.73deg
+    );
+    width: 937px;
+    height: 784px;
+  }
+  .connectbtn-button,
+  .ednnameip-input,
+  .notokenip-input,
+  .proceedbtn-button {
+    border: 0;
+    background-color: #d9d9d9;
+    position: absolute;
+    top: 283px;
+    left: 473px;
+    width: 388px;
+    height: 44px;
+  }
+  .connectbtn-button,
+  .notokenip-input,
+  .proceedbtn-button {
+    top: 371px;
+    left: 590px;
+    width: 153px;
+  }
+  .connectbtn-button,
+  .proceedbtn-button {
+    cursor: pointer;
+    padding: 0;
+    background-color: #4a99b2;
+    top: 23px;
+    left: 768px;
+    border-radius: 22px;
+    width: 128px;
+    opacity: 1;
+  }
+  .connectbtn-button.animate {
+    animation: 1s ease 0s 1 normal forwards jello-horizontal;
+  }
+  .proceedbtn-button {
+    background-color: #617d83;
+    top: 661px;
+    left: 409px;
+    width: 162px;
+    height: 57px;
+  }
+  .proceedbtn-button.animate {
+    animation: 1s ease 0s 1 normal forwards pulsate;
+  }
+  .priceoftoken-input,
+  .totalcost-div {
+    position: absolute;
+    left: 590px;
+    background-color: #d9d9d9;
+    width: 153px;
+    height: 44px;
+  }
+  .priceoftoken-input {
+    border: 0;
+    top: 459px;
+  }
+  .totalcost-div {
+    top: 547px;
+  }
+  .enter-edition-name {
+    top: 283px;
+    left: 111px;
+    display: inline-block;
+  }
+  .enter-edition-name,
+  .enter-no-of-tokens,
+  .enter-price-of-each-token,
+  .total-gas-fee {
+    margin: 0;
+    position: absolute;
+    font-size: inherit;
+    font-weight: 400;
+    font-family: inherit;
+  }
+  .enter-price-of-each-token {
+    top: 459px;
+    left: 53px;
+    display: inline-block;
+  }
+  .enter-no-of-tokens,
+  .total-gas-fee {
+    top: 371px;
+    left: 81px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 384px;
+  }
+  .total-gas-fee {
+    top: 547px;
+    left: 84px;
+  }
+  .container-div {
+    position: absolute;
+    top: 119px;
+    left: 251px;
+    width: 937px;
+    height: 784px;
+  }
+  .desktop-1 {
+    position: relative;
+    background-color: #fff;
+    width: 100%;
+    height: 1024px;
+    overflow: hidden;
+    text-align: left;
+    font-size: 36px;
+    color: #000;
+    font-family: Inter;
+  }
+  
