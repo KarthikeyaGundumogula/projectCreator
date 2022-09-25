@@ -1,0 +1,194 @@
+@keyframes pulsate {
+  0% {
+    transform: scale(1);
+    transform-origin: center center;
+    animation-timing-function: ease-out;
+  }
+  10% {
+    transform: scale(0.91);
+    animation-timing-function: ease-in;
+  }
+  17% {
+    transform: scale(0.98);
+    animation-timing-function: ease-out;
+  }
+  33% {
+    transform: scale(0.87);
+    animation-timing-function: ease-in;
+  }
+  45% {
+    transform: scale(1);
+    animation-timing-function: ease-out;
+  }
+}
+@keyframes jello-horizontal {
+  0%,
+  to {
+    transform: scale3d(1, 1, 1);
+  }
+  30% {
+    transform: scale3d(1.25, 0.75, 1);
+  }
+  40% {
+    transform: scale3d(0.75, 1.25, 1);
+  }
+  50% {
+    transform: scale3d(1.15, 0.85, 1);
+  }
+  65% {
+    transform: scale3d(0.95, 1.05, 1);
+  }
+  75% {
+    transform: scale3d(1.05, 0.95, 1);
+  }
+}
+body {
+  margin: 0;
+  line-height: normal;
+}
+.mint-your-social-token {
+  margin: 0;
+  position: absolute;
+  top: calc(50% - 290px);
+  left: calc(50% - 390.5px);
+  font-size: 48px;
+  font-weight: 800;
+  font-family: inherit;
+  color: #002535;
+  display: flex;
+  align-items: center;
+  width: 395px;
+  height: 83px;
+}
+.container-div1 {
+  position: absolute;
+  top: calc(50% - 392px);
+  left: calc(50% - 468.5px);
+  background: conic-gradient(
+    from -64.11deg at 50% 50%,
+    #3abad7 -61.47deg,
+    rgba(41, 101, 114, 0.44) 114.73deg,
+    rgba(37, 81, 90, 0.31) 164.65deg,
+    rgba(39, 71, 78, 0.3) 232.6deg,
+    #3abad7 298.53deg,
+    rgba(41, 101, 114, 0.44) 474.73deg
+  );
+  width: 937px;
+  height: 784px;
+}
+.connectbtn-button,
+.ednnameip-input,
+.notokenip-input,
+.proceedbtn-button {
+  border: 0;
+  background-color: #d9d9d9;
+  position: absolute;
+  top: calc(50% - 109px);
+  left: calc(50% - -4.5px);
+  width: 388px;
+  height: 44px;
+}
+.connectbtn-button,
+.notokenip-input,
+.proceedbtn-button {
+  top: calc(50% - 21px);
+  left: calc(50% - -121.5px);
+  width: 153px;
+}
+.connectbtn-button,
+.proceedbtn-button {
+  cursor: pointer;
+  padding: 0;
+  background-color: #4a99b2;
+  top: calc(50% - 369px);
+  left: calc(50% - -299.5px);
+  border-radius: 22px;
+  width: 128px;
+}
+.connectbtn-button:active {
+  animation: 1s ease 0s infinite normal none pulsate;
+  opacity: 1;
+}
+.proceedbtn-button {
+  background-color: #617d83;
+  top: calc(50% - -247px);
+  left: calc(50% - 59.5px);
+  width: 162px;
+  height: 57px;
+}
+.proceedbtn-button:active {
+  animation: 1s ease 0s infinite normal none jello-horizontal;
+  opacity: 1;
+}
+.priceoftoken-input {
+  border: 0;
+  background-color: #d9d9d9;
+  position: absolute;
+  top: calc(50% - -67px);
+  left: calc(50% - -121.5px);
+  width: 153px;
+  height: 44px;
+}
+.h4 {
+  margin: 0;
+  position: absolute;
+  top: calc(50% - -155px);
+  left: calc(50% - -63.5px);
+  font-size: 40px;
+  letter-spacing: 0.01em;
+  font-weight: 600;
+  font-family: inherit;
+  display: inline-block;
+}
+.enter-edition-name {
+  top: calc(50% - 109px);
+  left: calc(50% - 357.5px);
+  display: inline-block;
+}
+.enter-edition-name,
+.enter-no-of-tokens,
+.enter-price-of-each-token,
+.total-gas-fee {
+  margin: 0;
+  position: absolute;
+  font-size: inherit;
+  font-weight: 400;
+  font-family: inherit;
+}
+.enter-price-of-each-token {
+  top: calc(50% - -54px);
+  left: calc(50% - 422.5px);
+  display: inline-block;
+}
+.enter-no-of-tokens,
+.total-gas-fee {
+  top: calc(50% - 21px);
+  left: calc(50% - 387.5px);
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 384px;
+}
+.total-gas-fee {
+  top: calc(50% - -157px);
+  left: calc(50% - 251.5px);
+}
+.container-div {
+  position: absolute;
+  top: calc(50% - 393px);
+  left: calc(50% - 469px);
+  width: 937px;
+  height: 784px;
+}
+.desktop-1 {
+  position: relative;
+  background-color: #fff;
+  width: 100%;
+  height: 1024px;
+  overflow: hidden;
+  text-align: left;
+  font-size: 36px;
+  color: #000;
+  font-family: Inter;
+}

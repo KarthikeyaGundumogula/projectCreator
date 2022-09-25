@@ -1,0 +1,182 @@
+@keyframes jello-horizontal {
+  0%,
+  to {
+    transform: scale3d(1, 1, 1);
+  }
+  30% {
+    transform: scale3d(1.25, 0.75, 1);
+  }
+  40% {
+    transform: scale3d(0.75, 1.25, 1);
+  }
+  50% {
+    transform: scale3d(1.15, 0.85, 1);
+  }
+  65% {
+    transform: scale3d(0.95, 1.05, 1);
+  }
+  75% {
+    transform: scale3d(1.05, 0.95, 1);
+  }
+}
+@keyframes pulsate {
+  0% {
+    transform: scale(1);
+    transform-origin: center center;
+    animation-timing-function: ease-out;
+  }
+  10% {
+    transform: scale(0.91);
+    animation-timing-function: ease-in;
+  }
+  17% {
+    transform: scale(0.98);
+    animation-timing-function: ease-out;
+  }
+  33% {
+    transform: scale(0.87);
+    animation-timing-function: ease-in;
+  }
+  45% {
+    transform: scale(1);
+    animation-timing-function: ease-out;
+  }
+}
+body {
+  margin: 0;
+  line-height: normal;
+}
+.container-div1 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 12px;
+  background-color: #d5d5d5;
+  width: 1306px;
+  height: 870px;
+}
+.connect-btn-button,
+.proceed-btn-button {
+  cursor: pointer;
+  border: 0;
+  padding: 0;
+  position: absolute;
+  border-radius: 22px;
+}
+.connect-btn-button {
+  background-color: rgba(50, 57, 95, 0.68);
+  color: #fff;
+  top: 35px;
+  left: 1128px;
+  width: 133px;
+  height: 51px;
+}
+.connect-btn-button:active {
+  animation: 1s ease 0s infinite normal none jello-horizontal;
+  opacity: 1;
+}
+.proceed-btn-button {
+  background-color: #1d2345;
+  color: #fff;
+  top: 673px;
+  left: 563px;
+  width: 180px;
+  height: 52px;
+}
+.proceed-btn-button:active {
+  animation: 1s ease 0s infinite normal none pulsate;
+  opacity: 1;
+}
+.add-your-video-or-a-banner,
+.budget-of-your-ad,
+.enter-target-viewer-area {
+  margin: 0;
+  position: absolute;
+  top: 208px;
+  left: 266px;
+  font-size: inherit;
+  font-weight: 500;
+  font-family: inherit;
+  display: inline-block;
+}
+.budget-of-your-ad,
+.enter-target-viewer-area {
+  top: 288px;
+  left: 334px;
+}
+.enter-target-viewer-area {
+  top: 368px;
+  left: 282px;
+}
+.enter-name-of {
+  margin-block-start: 0;
+  margin-block-end: 0;
+}
+.you-want-your {
+  margin: 0;
+}
+.enter-name-of-the-channels-you {
+  margin: 0;
+  position: absolute;
+  top: 461px;
+  left: 267px;
+  font-size: inherit;
+  font-weight: 500;
+  font-family: inherit;
+  display: inline-block;
+}
+.budgetip-input,
+.channelnameip-textarea,
+.targetareaip-textarea,
+.videofile-input {
+  border: 0;
+  background-color: #fff;
+  position: absolute;
+  top: 202px;
+  left: 754px;
+  width: 197px;
+  height: 51px;
+}
+.budgetip-input,
+.channelnameip-textarea,
+.targetareaip-textarea {
+  top: 282px;
+}
+.channelnameip-textarea,
+.targetareaip-textarea {
+  top: 362px;
+}
+.channelnameip-textarea {
+  top: 461px;
+  height: 85px;
+}
+.create-a-new-ad {
+  margin: 0;
+  position: absolute;
+  top: 42px;
+  left: 64px;
+  font-size: 36px;
+  font-weight: 800;
+  font-family: inherit;
+  color: #162353;
+  text-align: left;
+  display: inline-block;
+}
+.container-div {
+  position: absolute;
+  top: 77px;
+  left: 67px;
+  width: 1306px;
+  height: 870px;
+}
+.desktop-1 {
+  position: relative;
+  background-color: #fff;
+  width: 100%;
+  height: 1024px;
+  overflow: hidden;
+  text-align: center;
+  font-size: 32px;
+  color: #1e1e1e;
+  font-family: Inter;
+}
