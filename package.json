@@ -1,4 +1,21 @@
 {
+  "name": "01",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/KarthikeyaGundumogula/project01.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/KarthikeyaGundumogula/project01/issues"
+  },
+  "homepage": "https://github.com/KarthikeyaGundumogula/project01#readme",
   "dependencies": {
     "moralis": "^2.6.0"
   }
