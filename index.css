@@ -108,6 +108,7 @@ body {
     rgba(186, 155, 236, 0.12) 89.36%,
     rgba(155, 103, 241, 0)
   );
+  -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   align-items: center;
   justify-content: center;
