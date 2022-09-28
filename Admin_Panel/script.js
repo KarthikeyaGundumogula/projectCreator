@@ -1,5 +1,4 @@
 /* Moralis init code */
-const {Moralis}=require("moralis")
 const serverUrl = "https://uawnov8scfvn.usemoralis.com:2053/server";
 const appId = "EDHnguXGhXgmfCbdhsoj7TjXmJkqixOYXwk0F0KR";
 Moralis.start({ serverUrl, appId });
@@ -19,6 +18,10 @@ async function login() {
         console.log(error);
       });
   }
+  let s=user.get("ethAddress");
+  s=`${s.slice(2,8)}...${s.slice(-7,-1)}`
+  document.getElementById("accAddress").innerText=s
+  document.getElementById("connectBtn").innerText="connected"
 }
 
 document.getElementById("connectBtn").onclick=login
