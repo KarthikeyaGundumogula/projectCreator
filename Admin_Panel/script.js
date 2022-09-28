@@ -1,4 +1,5 @@
 /* Moralis init code */
+const {Moralis}=require("moralis")
 const serverUrl = "https://uawnov8scfvn.usemoralis.com:2053/server";
 const appId = "EDHnguXGhXgmfCbdhsoj7TjXmJkqixOYXwk0F0KR";
 Moralis.start({ serverUrl, appId });
