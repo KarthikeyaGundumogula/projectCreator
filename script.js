@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 const Moralis = require("moralis-v1");
 require("dotenv").config();
 
@@ -15,3 +16,14 @@ async function connect () {
 }
 
 connect();
+=======
+const Moralis = require("moralis-v1")
+require("dotenv").config()
+
+const serverId=process.env.SERVERURL
+const appId=process.env.appId
+
+Moralis.start({serverId,appId})
+
+const profile=document.getElementById("profile")
+>>>>>>> 0c92ef19a9e8b7cc234c2874b3641f3ce2c2855f
