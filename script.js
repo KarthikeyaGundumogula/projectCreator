@@ -5,5 +5,3 @@ const serverId=process.env.SERVERURL
 const appId=process.env.appId
 
 Moralis.start({serverId,appId})
-
-const profile=document.getElementById("profile")
