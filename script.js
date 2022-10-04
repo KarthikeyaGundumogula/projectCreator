@@ -21,4 +21,6 @@ async function connect() {
     profile.textContent = "Connected";
   }
 }
-document.getElementById("profile").onclick = connect;
+
+let profile = document.getElementById("profile");
+profile.onclick = connect;
