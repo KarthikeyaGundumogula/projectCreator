@@ -1,0 +1,17 @@
+:root {
+    /* fonts */
+    --font-averia-serif-libre: "Averia Serif Libre";
+    --font-asul: Asul;
+  
+    /* font sizes */
+    --font-size-base: 43px;
+  
+    /* Colors */
+    --color-gray-100: #f5f5f5;
+    --color-gray-200: #d9d9d9;
+    --color-black: #000;
+  
+    /* border radiuses */
+    --br-md: 12px;
+  }
+  
