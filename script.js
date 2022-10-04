@@ -1,7 +1,21 @@
-const Moralis = require("moralis-v1")
-require("dotenv").config()
+const Moralis = require("moralis-v1");
+require("dotenv").config();
 
-const serverId=process.env.SERVERURL
-const appId=process.env.appId
+const SERVERURL = process.env.SERVERURL;
+const APPID = process.env.APPID;
 
+<<<<<<< HEAD
 Moralis.start({serverId,appId})
+=======
+Moralis.start( { serverUrl: SERVERURL, appId: APPID } );
+
+async function connect () {
+    let user = await Moralis.User.current();
+    if ( !user ) {
+        user = await Moralis.Web3.authenticate();
+    }
+    console.log( user );
+}
+
+connect();
+>>>>>>> origin/main
