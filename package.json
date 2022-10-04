@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "dotenv": "^16.0.3",
+    "moralis-v1": "^1.11.0"
+  }
+}
