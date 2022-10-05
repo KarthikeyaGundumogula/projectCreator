@@ -1,5 +1,6 @@
 /* Moralis init code */
-const serverUrl = "https://uawnov8scfvn.usemoralis.com:2053/server";
+require("dotenv").config({path:"../.env"})
+const serverUrl = process.env.SERVERURL
 const appId = "EDHnguXGhXgmfCbdhsoj7TjXmJkqixOYXwk0F0KR";
 Moralis.start({ serverUrl, appId });
 
@@ -11,7 +12,7 @@ async function login() {
       signingMessage: "Log in using Moralis",
     })
       .then(function (user) {
-        console.log("logged in user:", user);
+        console.log("logged in user:", user); 
         document.getElementById("accAddress").innerText=user.get("ethAddress")
       })
       .catch(function (error) {
